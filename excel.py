@@ -4,8 +4,6 @@ book = xlrd.open_workbook('2018.xlsx')
 sheet = book.sheet_by_index(3)
 nrows = sheet.nrows
 
-#n = 21
-
 def Nginxlize():
     print("stream {")
     print("     upstream app-%s {") %virtul_port
