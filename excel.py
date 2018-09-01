@@ -6,7 +6,7 @@ nrows = sheet.nrows
 
 #n = 21
 
-def Ngixlize():
+def Nginxlize():
     print("stream {")
     print("     upstream app-%s {") %virtul_port
     print("         server %s:%s     max_fails=3 fail_timeout=30s;") %(upstream_ip1, upstream_port1)
@@ -30,6 +30,6 @@ for n in range(1,nrows,2):
     upstream_ip2 = value2[3]
     upstream_port2 = int(value2[4])
     masterorbackup2 = value2[5]
-    Ngixlize()
+    Nginxlize()
 
 
